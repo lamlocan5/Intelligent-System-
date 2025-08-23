@@ -1,0 +1,6 @@
+# Loại trừ thư mục .ipynb_checkpoints
+.ipynb_checkpoints/
+/slides
+/.ipynb_checkpoints
+/.slides
+/.vscode
