@@ -1,0 +1,32 @@
+{
+  "bmi_categories": {
+    "underweight": "BMI < 18.5",
+    "normal": "18.5 ≤ BMI < 25",
+    "overweight": "BMI ≥ 25"
+  },
+  "advice": {
+    "underweight": [
+      "Tăng năng lượng lành mạnh: thêm ngũ cốc nguyên hạt, các loại hạt và dầu lành mạnh.",
+      "Ăn đủ đạm (thịt nạc, trứng, sữa chua, đậu).",
+      "Chia nhỏ bữa, thêm snack giàu dinh dưỡng.",
+      "Theo dõi cân nặng, giấc ngủ; khám chuyên khoa nếu sụt cân nhanh."
+    ],
+    "normal": [
+      "Duy trì chế độ ăn cân bằng, nhiều rau củ quả (≥400 g/ngày).",
+      "Hoạt động thể lực: ≥150 phút/tuần mức vừa hoặc ≥75 phút/tuần mức mạnh; tập tăng cơ ≥2 ngày/tuần.",
+      "Hạn chế đồ uống có đường và thực phẩm siêu chế biến.",
+      "Duy trì thói quen ngủ đủ giấc, quản lý stress."
+    ],
+    "overweight": [
+      "Thiết lập mục tiêu giảm cân thực tế, theo dõi khẩu phần và calo.",
+      "Tăng rau củ quả; giảm đường, muối, chất béo bão hòa.",
+      "Hoạt động thể lực theo khuyến nghị (≥150 phút/tuần + 2 ngày tăng cơ).",
+      "Kết hợp ngủ đủ, quản lý stress; cân nhắc tư vấn dinh dưỡng y khoa nếu cần."
+    ]
+  },
+  "sources": [
+    "WHO BMI cutoffs, CDC BMI categories",
+    "WHO healthy diet (≥400g rau quả/ngày)",
+    "CDC & WHO physical activity (≥150 phút/tuần)"
+  ]
+}

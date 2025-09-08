@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-cdr.496.9" scope="system"
+  system="https://pasta.edirepository.org"
+  xmlns:cit="eml://ecoinformatics.org/literature-2.1.0"
+  xmlns:doc="eml://ecoinformatics.org/documentation-2.1.0"
+  xmlns:ds="eml://ecoinformatics.org/dataset-2.1.0"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:prot="eml://ecoinformatics.org/protocol-2.1.0"
+  xmlns:res="eml://ecoinformatics.org/resource-2.1.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:sw="eml://ecoinformatics.org/software-2.1.0"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=CDR,o=lter,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier>knb-lter-cdr.496.9</alternateIdentifier>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/b612ba3114d3e160639c4b0066c60107</alternateIdentifier>
+    <shortName>abke267</shortName>
+    <title>Household Member Survey: Twin Cities Household Ecosystem Project</title>
+    <creator>
+      <individualName>
+        <givenName>Sarah</givenName>
+        <surName>Hobbie</surName>
+      </individualName>
+    </creator>
+    <metadataProvider>
+      <organizationName>Cedar Creek LTER</organizationName>
+      <address>
+        <deliveryPoint>Cedar Creek Ecosystem Science Reserve</deliveryPoint>
+        <deliveryPoint>100 Ecology Building</deliveryPoint>
+        <deliveryPoint>1987 Upper Buford Circle</deliveryPoint>
+        <city>Saint Paul</city>
+        <administrativeArea>MN</administrativeArea>
+        <postalCode>55108</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">612-301-2600</phone>
+      <phone phonetype="fax">612-624-6777</phone>
+      <electronicMailAddress>webmaster@cedarcreek.umn.edu</electronicMailAddress>
+      <onlineUrl>http://www.cedarcreek.umn.edu/</onlineUrl>
+    </metadataProvider>
+    <pubDate>2018-01-23</pubDate>
+    <abstract>
+      <para>We designed our methods to estimate carbon, nitrogen, and phosphorus fluxes through individual households, and to address two primary questions:
+
+    1. How are these fluxes distributed across households?
+    2. What biophysical and socioeconomic factors contribute to differences in these fluxes across households?
+
+Our hybrid approach combines:
+
+    1. A mailed survey 
+    2. Energy provider records
+    3. On-the-ground landscape measurements
+    4. A computational tool (the Household Flux Calculator)
+    4. Parcel data (interpreted using GIS)
+
+The resulting dataset includes information on biophysical and socioeconomic variables that potentially influence household-level fluxes of elements. Using this method to study element fluxes at the household level allows us to explicitly link consumption choices and element fluxes.</para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">carbon</keyword>
+      <keyword keywordType="theme">ecosystems</keyword>
+      <keyword keywordType="theme">landscape</keyword>
+      <keyword keywordType="theme">surveys</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <section>
+        <title>Intellectual Rights for Cedar Creek LTER data</title>
+        <para>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.</para>
+        <para>
+          <itemizedlist>
+            <listitem>
+              <para>This is a human-readable summary of (and not a substitute for) the license.</para>
+            </listitem>
+            <listitem>
+              <para>You are free to copy and redistribute the material in any medium or format</para>
+            </listitem>
+            <listitem>
+              <para>You are free to remix, transform, and build upon the material for any purpose, even commercially.</para>
+            </listitem>
+            <listitem>
+              <para>The licensor cannot revoke these freedoms as long as you follow the license terms.</para>
+            </listitem>
+            <listitem>
+              <para>Under the following terms.  You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.  You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</para>
+            </listitem>
+            <listitem>
+              <para>Notice - You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.</para>
+            </listitem>
+            <listitem>
+              <para>Notice - No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </section>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage id="geoReferenceID">
+        <geographicDescription> The Cedar Creek Ecosystem Science Reserve is located in Anoka and Isanti counties, approximately 30 miles north of Saint Paul, MN. CCNHA lies at the boundary between prairie and forest. It is a mosaic of uplands dominated by oak savanna, prairie, hardwood forest, pine forests,and abandoned agricultural fields and of lowlands comprised of ash and cedar swamps, acid bogs, marshes, and sedge meadows. Large tracts of the pre-agricultural ecosystems of the region are preserved within its boundaries, as is a successional chronosequence of more than 80 old fields of known history.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-93.22445</westBoundingCoordinate>
+          <eastBoundingCoordinate>-93.16289</eastBoundingCoordinate>
+          <northBoundingCoordinate>45.44138</northBoundingCoordinate>
+          <southBoundingCoordinate>45.384865</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2008</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2008</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <individualName>
+        <givenName>Dan</givenName>
+        <surName>Bahauddin</surName>
+      </individualName>
+      <organizationName>Cedar Creek Ecosystem Science Reserve</organizationName>
+      <positionName>Information Manager</positionName>
+      <address>
+        <deliveryPoint>Ecology Evolution and Behaviour Dept. University Of Minnesota</deliveryPoint>
+        <deliveryPoint>100 Ecology Building</deliveryPoint>
+        <deliveryPoint>1987 Upper Buford Circle</deliveryPoint>
+        <city>Saint Paul</city>
+        <administrativeArea>MN</administrativeArea>
+        <postalCode>55108</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">612-625-5740</phone>
+      <phone phonetype="fax">612-624-6777</phone>
+      <electronicMailAddress>webmaster@cedarcreek.umn.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Summary</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+In urban ecosystems, household decisions contribute to environmental pollution as well as environmental solutions. Although households are known to significantly influence the energy budgets of cities and nations, few studies have moved beyond energy to characterize household cycles of the major elements that contribute most to pollutants.
+
+In the Twin Cities Household Ecosystem Project (TCHEP), we are quantifying the cycles of carbon, nitrogen, and phosphorus through households along an urban to exurban gradient in the Saint Paul-Minneapolis, Minnesota metropolitan area. We are especially interested in how biophysical combined with socio-demographic and psychological factors influence household decisions about activities like transportation, diet, home energy use, and landscape management, all major contributors to household element cycles. Ultimately, we hope that our research will inform individual decision making and policies intended to mitigate local and global pollution arising from human activities in cities.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Sample</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+The target population for our survey was households in Ramsey and Anoka Counties that met three criteria:
+
+    1. Represent ?upland? hydrologic type (no ponds or wetlands on property)
+    2. Have greater than 0% impervious surface on the property
+    3. Are single-family detached homes
+
+We selected all census blocks in Ramsey and Anoka Counties where more than 50% of land area met these three criteria. With the help of Survey Sampling International, we randomly selected 15,000 homes to receive our survey. We sampled households by selecting more homes in highly populated census blocks. Once we had selected our sample, we mailed the survey with an introductory letter. About two weeks later, we sent a reminder postcard and approximately one month after the initial mailing, we sent a second copy of the survey to any addresses that did not respond to either the first mailing or the postcard reminder. Respondents completed and returned the survey between May and August 2008. We received a total of 3,099 filled out surveys, equivalent to a response rate of 21.33%.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Energy Records</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+As part of the survey, we requested homeowner permission to access energy billing records from electricity and natural gas providers for the period May 2007 ? May 2008. We obtained permission from 1,940 households to obtain energy records. This information allowed us to estimate household yearly energy consumption. Of these 1,940 households, 1,517 households also gave us permission to visit their property to make landscape measurements.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Abstract</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+We designed our methods to estimate carbon, nitrogen, and phosphorus fluxes through individual households, and to address two primary questions:
+
+    1. How are these fluxes distributed across households?
+    2. What biophysical and socioeconomic factors contribute to differences in these fluxes across households?
+
+Our hybrid approach combines:
+
+    1. A mailed survey 
+    2. Energy provider records
+    3. On-the-ground landscape measurements
+    4. A computational tool (the Household Flux Calculator)
+    4. Parcel data (interpreted using GIS)
+
+The resulting dataset includes information on biophysical and socioeconomic variables that potentially influence household-level fluxes of elements. Using this method to study element fluxes at the household level allows us to explicitly link consumption choices and element fluxes.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Mail survey</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+Our survey (Nelson et al. 2008) consisted of 40 questions and took approximately 40 minutes to complete. The survey requested information on:
+
+    1. Demographics (age, gender, race and ethnicity, education, income, number of household members)
+    2. Household members&amp;rsquo; heights, weights, diets and levels of physical activity
+    3. Number and weights of pets
+    4. Food waste disposal and recycling habits
+    5. Air and motor vehicle travel
+    6. Landscape management practices
+    7. Respondent&amp;rsquo;s attitudes, perceived social norms, and perceived control regarding:
+        a. motor vehicle travel
+        b. home-energy efficiency behaviors
+        c. lawn fertilization
+        d. dietary meat consumption
+
+As part of the survey, we requested homeowner permission to access energy billing records from electricity and natural gas providers for the period May 2007 ? May 2008. We obtained permission from 1,940 households to obtain energy records. This information allowed us to estimate household yearly energy consumption. Of these 1,940 households, 1,517 households also gave us permission to visit their property to make landscape measurements.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Summary of response rate</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout/>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Map of Sample Distribution</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout/>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>The Household Flux Calculator</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+We developed a computational tool called the Household Flux Calculator (HFC) to convert all of the information we gathered (from the returned surveys, energy records, parcel data, and landscape assessment) into annual fluxes of carbon, nitrogen, and phosphorus using a series of algorithms and conversions based on available literature. The HFC is organized into seven main components (motor vehicle and air travel, household energy consumption, human diet, pet diet, landscaping, and paper and plastic consumption) and two sub-components (food waste and wastewater). Fluxes of carbon, nitrogen, and phosphorus through each one of these components can be analyzed independently. Every component of the HFC receives inputs of carbon, nitrogen, and phosphorus in different forms (e.g., food for human and pet nutrition, fuel for transportation) that then leave the household as outputs (e.g., CO2 from human and pet respiration; CO2 and NOx from fuel combustion).
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>the Household Flux Diagram</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout/>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Cited References</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+Milesi,C., C.D. Elvidge, J.B. Dietz, B.T. Tuttle, R.N. Ramkrishna, and S.W.W. Running. 2005. Mapping and modeling the biogeochemical cycling of turf grasses in the United States. Journal of Environmental Management 36:426-438.
+
+Nelson, K., S. Grayzeck, J. King, S. Hobbie, L. Baker, and J. McFadden. 2008. Our household choices in urban living survey, University of Minnesota, St. Paul. Household Survey. 
+
+Nowak, D.J., D.E. Crane, J.C. Steven, R.E. Hoehn, J.T. Walton, and J. Bond. 2008. A ground-based method of assessing urban forest structure and ecosystem services. Arboriculture &amp; Urban Forestry 34:347-358.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Landscape Measurements</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+During the summer of 2008, we conducted on-site landscape measurements for a subsample of 360 households to estimate fluxes and storage of carbon, nitrogen, and phosphorus in vegetation and soils on their properties.
+
+Landscape measurements included:
+
+    1. Assessment of land cover type (trees, bushes, lawn, impervious surface, etc.)
+    2. Total number of trees
+
+For each tree greater than 2 cm at breast height, we recorded:
+
+    1. Species
+    2. Diameter at breast height (DBH)
+    3. Total height and height of first branching
+    4. Canopy light exposure
+    5. Percent of canopy missing
+    6. Canopy dieback (as % dead branches)
+    7. Distance and direction from buildings (for trees equal or greater than 7 m tall and located less than 20 m from the building)
+
+We used the Urban Forest Effects (UFORE) model to estimate tree C uptake and storage (Nowak et al. 2008) along with published data on wood and leaf stoichiometry to estimate tree N and P fluxes. We modified output from a model of turfgrass productivity (Milesi et al. 2005) and combined it with published data on grass and soil stoichiometry to estimate lawn carbon, nitrogen, and phosphorus fluxes.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Household Members</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+The HHMember table contains data about individual household members that comes from responses to Questions 2 and 13 in respondents were asked to give their age, gender, height, weight and hours of moderate and vigorous physical activity.  
+Each household member that is listed in the responses to these questions has a record in the HHMember table.   Since there can be one to many members for each household, there are one to many members listed in HHMember table for each Household.   Each record contains the Household ID number so records can be related to other household data.   In addition, each record has its own Household Member ID (HH_ID).  The HH_ID is used in many other tables and can be used to relate these other values with individual household members.  
+
+The data values collected from questions 2 and 13 are recorded in this table as true values: Age in years; weight in pounds; height in feet and inches; and physical activity in hours per week .  Gender is recorded as a 1 or 2 where 1 = Male and 2 = Female.
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Household Members</para>
+              </listitem>
+              <listitem>
+                <para>
+                  <literalLayout>
+TCHEP Researchers spent time on interpreting and calculating values based on the Household Member data for specific projects.  Some of this work was simple calculations such as converting the height values from feet and inches to centimeters, weight in pounds to kilograms, activity from hours per week to minutes per day.   In addition, work was done to make assumptions about missing height, weight, age and gender records.   
+
+Missing values for age were with the following manner. The average age of male adults, female adults, male children and female children was calculated.  These calculated values were used to fill in records with missing age data.   
+
+Most of the respondents completed the values for the height and weight of household members.  For those household members who did not answer, the researchers made the following assumptions: 1) Assumptions for the height of household members were based on their age, gender and weight.  If the weight was also missing, height was based on age and gender. 2) Assumptions for the height of household members were based on their age, gender and height.  If the height was also missing, height was based on age and gender.
+
+If more than one assumption was made about a household member, the asusmptions were made in the following order: 1. Gender, 2. Age, 3. Height and 4. Weight.
+
+These calculated and interpreted fields are not included, but maybe obtained on request.  Please contact Kristen Nelson (nelso468@umn.edu).
+								</literalLayout>
+                </para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>e267_Data on age, gender, height, weight, activity levels for each household member.</entityName>
+      <entityDescription>Household Member Survey: Twin Cities Household Ecosystem Project</entityDescription>
+      <physical>
+        <objectName>e267_Data on age, gender, height, weight, activity levels for each household member..txt</objectName>
+        <size unit="rows">7072</size>
+        <characterEncoding>ASCCII</characterEncoding>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <numFooterLines>0</numFooterLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>\t</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-cdr/496/9/83629d4212dd576f642508a8c83fecd5</url>
+          </online>
+          <access
+            authSystem="https://pasta.edirepository.org/authentication"
+            order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+            <allow>
+              <principal>uid=CDR,o=lter,dc=ecoinformatics,dc=org</principal>
+              <permission>all</permission>
+            </allow>
+            <allow>
+              <principal>public</principal>
+              <permission>read</permission>
+            </allow>
+          </access>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>HH_ID</attributeName>
+          <attributeDefinition>This field contains the Household ID.   Each household that responded to the survey has a unique household ID.  The ID is stored as a number that is up to 5 digits and is in the range of 1-15000.  This ID allows survey response data in different tables to be related to each other.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>This field contains the Household ID.   Each household that responded to the survey has a unique household ID.  The ID is stored as a number that is up to 5 digits and is in the range of 1-15000.  This ID allows survey response data in different tables to be related to each other. </definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Member_Age_Orig</attributeName>
+          <attributeDefinition>Reported age</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>nominalYear</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Member_ID</attributeName>
+          <attributeDefinition>This field contains the Member ID.   Each member within a household that responded to the survey was given a member ID.  The member IDs are unique across all households.    The ID is stored as a number that is up to 4 digits and is in the range of 1-7900.  This ID allows survey response data about household member in different tables to be related to each other.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>This field contains the Member ID.   Each member within a household that responded to the survey was given a member ID.  The member IDs are unique across all households.    The ID is stored as a number that is up to 4 digits and is in the range of 1-7900.  This ID allows survey response data about household member in different tables to be related to each other.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Member_Gender_Orig</attributeName>
+          <attributeDefinition>This field contains the gender of the household member given in Question 2.   A blank value in this field means no gender was provided. TCHEP researchers did fill in an assumed gender for blank values and these data are available on request.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>Male</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>2</code>
+                    <definition>Female</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>HEIGHT</attributeName>
+          <attributeDefinition>This field contains the original value provide in Question 13 about the height of the household member.   The value is given in FEET.INCHES, so a height of 5 feet, 6 inches would be given as 5.6 in this field.   This field (HEIGHT) does not contain assumed values. If there is no value in this field then no value was provided in the survey response.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>feet.inches</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>WEIGHT</attributeName>
+          <attributeDefinition>This field contains the original value provide in Question 13 about the weight of the household member.   The value is given in POUNDS.  If there is no value in this field then no value was provided in the survey response.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>pound</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Mod_act</attributeName>
+          <attributeDefinition>This field contains the response to question 13 in the survey about moderate exercise.  The value in this field is the moderate activity given in number of hours per week. If there are blanks in this field, no value was provided.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>hour</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Vig_act</attributeName>
+          <attributeDefinition>This field contains the response to question 13 in the survey about vigorous exercise.  The value in this field is the vigorous activity given in number of hours per week. If there are blanks in this field, no value was provided.</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>hour</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>7072</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <stmml:unitList>
+        <stmml:unit id="feet.inches" name="feet.inches">
+          <stmml:description>feet.inches</stmml:description>
+        </stmml:unit>
+      </stmml:unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

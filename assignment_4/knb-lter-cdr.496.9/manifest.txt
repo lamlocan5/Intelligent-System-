@@ -1,0 +1,5 @@
+Manifest file for knb-lter-cdr.496.9.zip created on Mon Sep 08 07:28:58 UTC 2025
+e267_Data on age, gender, height, weight, activity levels for each household member..txt (196472 bytes)
+knb-lter-cdr.496.9.xml (31643 bytes)
+knb-lter-cdr.496.9.txt (20011 bytes)
+knb-lter-cdr.496.9.report.xml (26300 bytes)
