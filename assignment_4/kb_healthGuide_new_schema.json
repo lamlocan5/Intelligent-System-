@@ -1,0 +1,300 @@
+{
+  "$id": "https://example.org/health-kb.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "bmiClassification": {
+      "items": {
+        "properties": {
+          "advice": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "bmi": {
+            "type": "number"
+          },
+          "klass": {
+            "enum": [
+              "under",
+              "normal",
+              "over"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "bmi",
+          "klass",
+          "advice"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "exercises": {
+      "items": {
+        "properties": {
+          "caloriesPer30Min": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "string"
+          },
+          "level": {
+            "enum": [
+              "easy",
+              "moderate",
+              "hard"
+            ],
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "suitableFor": {
+            "enum": [
+              "under",
+              "normal",
+              "over"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "level",
+          "caloriesPer30Min",
+          "suitableFor"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "foods": {
+      "items": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "nutrients": {
+            "properties": {
+              "calories": {
+                "type": "number"
+              },
+              "carb": {
+                "type": "number"
+              },
+              "fat": {
+                "type": "number"
+              },
+              "fiber": {
+                "type": "number"
+              },
+              "gi": {
+                "type": "integer"
+              },
+              "protein": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "calories",
+              "protein",
+              "carb",
+              "fat",
+              "fiber",
+              "gi"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "nutrients"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "mealPlans": {
+      "items": {
+        "properties": {
+          "goal": {
+            "enum": [
+              "loss",
+              "gain",
+              "maintain"
+            ],
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "kcal": {
+            "type": "integer"
+          },
+          "style": {
+            "enum": [
+              "mediterranean",
+              "dash",
+              "keto",
+              "balanced",
+              "vegetarian"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "goal",
+          "style",
+          "kcal",
+          "items"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "meta": {
+      "properties": {
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "locale": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "units": {
+          "properties": {
+            "energy": {
+              "type": "string"
+            },
+            "length": {
+              "type": "string"
+            },
+            "weight": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "length",
+            "weight",
+            "energy"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "createdAt",
+        "locale",
+        "units"
+      ],
+      "type": "object"
+    },
+    "rules": {
+      "items": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "if": {
+            "properties": {
+              "activity": {
+                "enum": [
+                  "low",
+                  "medium",
+                  "high"
+                ],
+                "type": "string"
+              },
+              "disease": {
+                "enum": [
+                  "diabetes",
+                  "hypertension",
+                  "none"
+                ],
+                "type": "string"
+              },
+              "klass": {
+                "enum": [
+                  "under",
+                  "normal",
+                  "over"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "klass",
+              "activity",
+              "disease"
+            ],
+            "type": "object"
+          },
+          "then": {
+            "properties": {
+              "advice": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "risk": {
+                "enum": [
+                  "low",
+                  "moderate",
+                  "high"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "risk",
+              "advice"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "if",
+          "then"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "meta",
+    "bmiClassification",
+    "foods",
+    "exercises",
+    "mealPlans",
+    "rules"
+  ],
+  "title": "Health Guidance Knowledge Base",
+  "type": "object"
+}
