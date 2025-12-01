@@ -22,12 +22,12 @@ tieuluan.v1_cq03.01_lamdn.docx
 *.zip
 *.rar
 *.7z
-DATA/
-datasets/
-/Data
-Data/
-/dataset
-dataset/
+# DATA/
+# datasets/
+# /Data
+# Data/
+# /dataset
+# dataset/
 vietnam_shp/
 vietnam-weather-data-preprocessed-v2/
 Stock_Prices_&_Volume_VN30_Index_Vietnam/

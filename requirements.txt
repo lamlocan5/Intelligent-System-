@@ -4,3 +4,9 @@ numpy
 pandas
 matplotlib
 scikit-learn
+streamlit
+joblib
+seaborn
+Pillow
+librosa
+transformers
