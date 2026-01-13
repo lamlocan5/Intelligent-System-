@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7bc89f78ae568ba87b09790aa26b91c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+     bottom: 50px; right: 50px; width: 250px; height: auto; 
+     background-color: white; border:2px solid grey; z-index:9999; 
+     font-size:14px; padding: 10px">
+    <h4 style="margin-top:0;">Huyền thoại (nhiệt độ °C)</h4>
+    <p><i class="fa fa-circle" style="color:#0033ff"></i> < 15°C (Lạnh)</p>
+    <p><i class="fa fa-circle" style="color:#0066ff"></i> 15-20°C (Mát)</p>
+    <p><i class="fa fa-circle" style="color:#00ff00"></i> 20-25°C (Ấm)</p>
+    <p><i class="fa fa-circle" style="color:#ffff00"></i> 25-30°C (Nóng)</p>
+    <p><i class="fa fa-circle" style="color:#ff9900"></i> 30-35°C (Rất nóng)</p>
+    <p><i class="fa fa-circle" style="color:#ff0000"></i> ≥ 35°C (Cực nóng)</p>
+</div>
+    
+            <div class="folium-map" id="map_c7bc89f78ae568ba87b09790aa26b91c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7bc89f78ae568ba87b09790aa26b91c = L.map(
+                "map_c7bc89f78ae568ba87b09790aa26b91c",
+                {
+                    center: [15.0, 105.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_705f2af3cf07d67dd65bb61ecfd46526 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_705f2af3cf07d67dd65bb61ecfd46526.addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+            var circle_marker_fd8d98bd8b604cb5f9d2fe315c22f3b4 = L.circleMarker(
+                [21.0333, 105.85],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 2}
+            ).addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+        var popup_46d217d944dc28a215245b30a16c35c2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_113bec56d418f64b51cd97bf991b7da8 = $(`<div id="html_113bec56d418f64b51cd97bf991b7da8" style="width: 100.0%; height: 100.0%;">     <b>Hà Nội</b><br>     Dự báo nhiệt độ cao: <b>633.27°C</b><br>     Tọa độ: (21.03, 105.85)     </div>`)[0];
+                popup_46d217d944dc28a215245b30a16c35c2.setContent(html_113bec56d418f64b51cd97bf991b7da8);
+            
+        
+
+        circle_marker_fd8d98bd8b604cb5f9d2fe315c22f3b4.bindPopup(popup_46d217d944dc28a215245b30a16c35c2)
+        ;
+
+        
+    
+    
+            var marker_099d5745174ea8164711f400544f6273 = L.marker(
+                [21.0333, 105.85],
+                {
+}
+            ).addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+            var icon_41af9a5fa82e305c7371070272f6b001 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_648421e2d15903c4f8ade72b014aa141 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_0d8d43eadf31a57426d1ae83939981f2 = $(`<div id="html_0d8d43eadf31a57426d1ae83939981f2" style="width: 100.0%; height: 100.0%;">Hà Nội<br>633.3°C</div>`)[0];
+                popup_648421e2d15903c4f8ade72b014aa141.setContent(html_0d8d43eadf31a57426d1ae83939981f2);
+            
+        
+
+        marker_099d5745174ea8164711f400544f6273.bindPopup(popup_648421e2d15903c4f8ade72b014aa141)
+        ;
+
+        
+    
+    
+                marker_099d5745174ea8164711f400544f6273.setIcon(icon_41af9a5fa82e305c7371070272f6b001);
+            
+    
+            var circle_marker_324c618e486a585477cfebcf07b472d9 = L.circleMarker(
+                [16.0406, 108.2125],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 2}
+            ).addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+        var popup_19aaeacfb8769c1848d572e257ca5256 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e35740e2dd36d895f4b9e591019f5b92 = $(`<div id="html_e35740e2dd36d895f4b9e591019f5b92" style="width: 100.0%; height: 100.0%;">     <b>Đà Nẵng</b><br>     Dự báo nhiệt độ cao: <b>401.22°C</b><br>     Tọa độ: (16.04, 108.21)     </div>`)[0];
+                popup_19aaeacfb8769c1848d572e257ca5256.setContent(html_e35740e2dd36d895f4b9e591019f5b92);
+            
+        
+
+        circle_marker_324c618e486a585477cfebcf07b472d9.bindPopup(popup_19aaeacfb8769c1848d572e257ca5256)
+        ;
+
+        
+    
+    
+            var marker_4bbcb3cc9b5979b4de643584f1838966 = L.marker(
+                [16.0406, 108.2125],
+                {
+}
+            ).addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+            var icon_4ce2caf6c372f0f132bb0430f71b7bad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e19062796cd342fb99f10e6ab363e4a4 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_d6f727280fb0be13ede4bbe7af6d8507 = $(`<div id="html_d6f727280fb0be13ede4bbe7af6d8507" style="width: 100.0%; height: 100.0%;">Đà Nẵng<br>401.2°C</div>`)[0];
+                popup_e19062796cd342fb99f10e6ab363e4a4.setContent(html_d6f727280fb0be13ede4bbe7af6d8507);
+            
+        
+
+        marker_4bbcb3cc9b5979b4de643584f1838966.bindPopup(popup_e19062796cd342fb99f10e6ab363e4a4)
+        ;
+
+        
+    
+    
+                marker_4bbcb3cc9b5979b4de643584f1838966.setIcon(icon_4ce2caf6c372f0f132bb0430f71b7bad);
+            
+    
+            var circle_marker_47ba604fc058ccc09955284d039bf3e0 = L.circleMarker(
+                [10.75, 106.6667],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 2}
+            ).addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+        var popup_b5409667e81983e8bfe8af4b802961e4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_60ac8191d2276f6bb5b12e3a11166ed5 = $(`<div id="html_60ac8191d2276f6bb5b12e3a11166ed5" style="width: 100.0%; height: 100.0%;">     <b>TP. Hồ Chí Minh</b><br>     Dự báo nhiệt độ cao: <b>362.64°C</b><br>     Tọa độ: (10.75, 106.67)     </div>`)[0];
+                popup_b5409667e81983e8bfe8af4b802961e4.setContent(html_60ac8191d2276f6bb5b12e3a11166ed5);
+            
+        
+
+        circle_marker_47ba604fc058ccc09955284d039bf3e0.bindPopup(popup_b5409667e81983e8bfe8af4b802961e4)
+        ;
+
+        
+    
+    
+            var marker_7d95f1de30c32b31cd34ce34c3f50157 = L.marker(
+                [10.75, 106.6667],
+                {
+}
+            ).addTo(map_c7bc89f78ae568ba87b09790aa26b91c);
+        
+    
+            var icon_da4455067c40d55b2e98df5be33c5326 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35af215f8e8a727ecb30fdb538fe0906 = L.popup({
+  "maxWidth": 150,
+});
+
+        
+            
+                var html_17e92972eb91eecb768d9c1a99b5dbb0 = $(`<div id="html_17e92972eb91eecb768d9c1a99b5dbb0" style="width: 100.0%; height: 100.0%;">TP. Hồ Chí Minh<br>362.6°C</div>`)[0];
+                popup_35af215f8e8a727ecb30fdb538fe0906.setContent(html_17e92972eb91eecb768d9c1a99b5dbb0);
+            
+        
+
+        marker_7d95f1de30c32b31cd34ce34c3f50157.bindPopup(popup_35af215f8e8a727ecb30fdb538fe0906)
+        ;
+
+        
+    
+    
+                marker_7d95f1de30c32b31cd34ce34c3f50157.setIcon(icon_da4455067c40d55b2e98df5be33c5326);
+            
+</script>
+</html>
